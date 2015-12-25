@@ -1,0 +1,130 @@
+#Gravity and Jump-Through Code Snippet (2-D Platform Game)
+'This code helps you to create a platform games, where you
+'can jump through the platforms.
+
+
+'NOTE: In the MORE CODE FOR MAIN CLASS, insert the
+'	   following piece of code:
+
+'//////////////////////////////////////////////
+'			Private CanJump as boolean = True
+'//////////////////////////////////////////////
+
+'-------------------------------------------
+'Declarations
+'-------------------------------------------
+	Dim ins1 as bd2DInstance = <Your_Main_Character>
+	Dim obj1 as bd2DObject = <You_Jump_Through_Walls>
+
+'-------------------------------------------
+'Basic Left/Right Movement
+'-------------------------------------------
+	If ins1.X > 0 
+		If Game.GetKeyboardState(DirectInput.Key.Left) Then ins1.X -= 0.5
+	End If
+	If ins1.X + ins1.Width < Me.Width Then
+		If Game.GetKeyboardState(DirectInput.Key.Right) Then ins1.X += 0.5
+	End If
+
+'-------------------------------------------
+'Apply gravitational force
+'-------------------------------------------
+	Dim k as bd2DInstance
+	If Game.Check2DCollision(ins1, obj1, k) = False Then
+		ins1.ChangeGravity(0.005, New Vector2(0, 1))		'If there is not collision
+															'at all, apply gravity.
+	Else
+		ins1.ChangeGravity(0, Vector2.Empty)				'If there is collision, then
+															'we do not apply gravity.
+		
+		'//Note: For the following numerical figures
+		'//(46 and 16) to work perfectly, your ins1
+		'//sprite should be of size 32 X 32 and your
+		'//obj1 sprite should be of size 16 X 16.
+		
+		If ins1.Y + 46 < k.Y + 16 then						'Make sure the wall we are
+			ins1.Velocity = New Vector2(0, 0)				'colliding with is exactly
+			CanJump = True									'below us.
+															'If so, stop from moving
+															'further below and make
+															'sure we can jump.
+		else
+			ins1.ChangeGravity(0.005, New Vector2(0, 1))	'Otherwise, we apply gravity.
+		End If
+	End If
+
+'-------------------------------------------
+'Jump
+'-------------------------------------------
+	If Game.GetKeyboardState(DirectInput.Key.Up) = True Then
+		If CanJump = True  Then 
+			ins1.Velocity = New Vector2(0, -0.8)			'We move upward with some speed
+			CanJump = False									'which will decrease due to
+															'the gravitational force.
+		End If
+	End If
+	
+#Movement using Keyboard Keys (2D Games) #1
+'This code helps you to create a 2D game where you can
+'move your character with the arrow keys.
+
+'-------------------------------------------
+'Declarations
+'-------------------------------------------
+	Dim MoveSpeed as Double = 0.5	'<--Change this to the required speed
+
+	Dim main_char as bd2DInstance = <Your_Character_To_Move>
+
+'-------------------------------------------
+'Movement
+'-------------------------------------------
+	If Game.GetKeyboardState(DirectInput.Key.Left) Then
+		main_char.Velocity = New Vector2(-MoveSpeed, 0)
+	ElseIf Game.GetKeyboardState(DirectInput.Key.Right) Then
+		main_char.Velocity = New Vector2(MoveSpeed, 0)
+	ElseIf Game.GetKeyboardState(DirectInput.Key.Up) Then
+		main_char.Velocity = New Vector2(0, -MoveSpeed)
+	ElseIf Game.GetKeyboardState(DirectInput.Key.Down) Then
+		main_char.Velocity = New Vector2(0, MoveSpeed)
+	Else
+		main_char.Velocity = New Vector2(0, 0)
+	End If
+
+#Movement using Keyboard Keys (2D Games) #2
+'This code helps you to create a 2D maze game with
+'impassable walls and a character to move using
+'the arrow keys. It is assumed that the both the wall
+'and the character have sprites of size 32 X 32.
+
+'-------------------------------------------
+'Declarations
+'-------------------------------------------
+	Dim MoveSpeed as Double = 0.5	'<--Change this to the required speed
+
+	Dim main_char as bd2DInstance = <Your_Character_To_Move>
+	Dim wall_obj as bd2DObject = <Your_Impassable_Wall>
+
+'-------------------------------------------
+'Movement
+'-------------------------------------------
+	If Game.Test2DSnap(Man,32,32) Then
+		If Game.GetKeyboardState(DirectInput.Key.Left) Then
+			main_char.Velocity = New Vector2(-MoveSpeed, 0)
+		ElseIf Game.GetKeyboardState(DirectInput.Key.Right) Then
+			main_char.Velocity = New Vector2(MoveSpeed, 0)
+		ElseIf Game.GetKeyboardState(DirectInput.Key.Up) Then
+			main_char.Velocity = New Vector2(0, -MoveSpeed)
+		ElseIf Game.GetKeyboardState(DirectInput.Key.Down) Then
+			main_char.Velocity = New Vector2(0, MoveSpeed)
+		Else
+			main_char.Velocity = New Vector2(0, 0)
+		End If
+	End If
+'-------------------------------------------
+'Collision
+'-------------------------------------------
+	If Game.Check2DCollision(main_char,wall_obj) = True Then
+		main_char.Velocity = New Vector2(0, 0)
+		Game.SnapToPos(main_char,32,32)
+	End If
+#

@@ -1,0 +1,61 @@
+Imports Microsoft.VisualBasic
+Imports System
+Imports System.Drawing
+Imports System.Windows.Forms
+Imports System.Data
+Imports System.IO
+Imports System.Diagnostics
+
+Class MainClass
+
+    Public Shared Sub Main()
+		Dim k as new MainClass()
+    End Sub
+    
+    Public Sub New()
+		Dim FileName as string
+		Dim MedFileName as string
+		
+		Rem FILENAME
+		
+		Dim fs As New FileStream(Application.StartupPath + "\" + MedFileName, FileMode.Open, FileAccess.Read)
+        Dim w As New BinaryReader(fs)
+        
+        Dim bdLn as integer = w.ReadInt32()
+        Dim bdEn(bdLn) as byte
+        bdEn = w.ReadBytes(bdLn)
+        
+		Dim fllna as integer = w.ReadInt32()
+        Dim kkja(fllna) as byte
+        kkja = w.ReadBytes(fllna)
+        
+        Dim flln as integer = w.ReadInt32()
+        Dim kkj(flln) as byte
+        kkj = w.ReadBytes(flln)
+                
+        w.close()
+        fs.Close()
+        
+        Dim OurFolderName as string = My.Computer.FileSystem.SpecialDirectories.Temp + "\AppTmp"
+        My.Computer.FileSystem.CreateDirectory(OurFolderName)
+        My.Computer.FileSystem.GetDirectoryInfo(OurFolderName).Attributes = FileAttributes.Hidden
+        My.Computer.FileSystem.WriteAllBytes(OurFolderName + "\bdGameEngine.dll", bdEn, False)
+        My.Computer.FileSystem.WriteAllBytes(OurFolderName + "\" + k, kkja, False)
+        My.Computer.FileSystem.WriteAllBytes(OurFolderName + "\" + FileName + ".exe", kkj, False)
+        
+        Shell(OurFolderName + "\" + FileName + ".exe", AppWinStyle.NormalFocus, True)
+        
+        Dim success as boolean = False
+        Do
+			Try
+				My.Computer.FileSystem.DeleteDirectory(OurFolderName, FileIO.DeleteDirectoryOption.DeleteAllContents)
+				Success = True
+			Catch
+				Success = false
+			End Try
+		Loop while Success = False
+		
+		
+	End Sub
+
+End Class

@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3115A91-5A3F-4B9A-9BF4-18FDDD74CC89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Reality_Studio.My.MyApplication</StartupObject>
+    <RootNamespace>Reality_Studio</RootNamespace>
+    <AssemblyName>Reality Game Studio</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\debug\</OutputPath>
+    <DocumentationFile>Reality Game Studio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Reality Game Studio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="bdGameEngine, Version=1.0.3946.25813, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DirectX-C++\Test\release\bdGameEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="bdGameEngine" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bdEvent.vb" />
+    <Compile Include="bdSpriteStore.vb" />
+    <Compile Include="ClassForm.Designer.vb">
+      <DependentUpon>ClassForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeForm.Designer.vb">
+      <DependentUpon>CodeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollisionBox.vb" />
+    <Compile Include="CollisionSphere.vb" />
+    <Compile Include="ImgViewer.Designer.vb">
+      <DependentUpon>ImgViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImgViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreCodeForm.Designer.vb">
+      <DependentUpon>MoreCodeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MoreCodeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventAdder.Designer.vb">
+      <DependentUpon>EventAdder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventAdder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bdEachLevel.vb" />
+    <Compile Include="GameEditor.Designer.vb">
+      <DependentUpon>GameEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelEditor.Designer.vb">
+      <DependentUpon>LevelEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LevelEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainEditor.Designer.vb">
+      <DependentUpon>MainEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeshViewerDisplay.Designer.vb">
+      <DependentUpon>MeshViewerDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MeshViewerDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicList.Designer.vb">
+      <DependentUpon>MusicList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MusicList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberBox.Designer.vb">
+      <DependentUpon>NumberBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NumberBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Object2DEditor.Designer.vb">
+      <DependentUpon>Object2DEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Object2DEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="References.Designer.vb">
+      <DependentUpon>References.vb</DependentUpon>
+    </Compile>
+    <Compile Include="References.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenShot.vb" />
+    <Compile Include="SnippetReader.vb" />
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpriteEditor.Designer.vb">
+      <DependentUpon>SpriteEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpriteEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyntaxHighlighter.vb" />
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediaStore.vb" />
+    <Compile Include="MeshEditor.Designer.vb">
+      <DependentUpon>MeshEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MeshEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeshViewer.Designer.vb">
+      <DependentUpon>MeshViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MeshViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ObjectEditor.Designer.vb">
+      <DependentUpon>ObjectEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextureList.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClassForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CodeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImgViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImgViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreCodeForm.resx">
+      <DependentUpon>MoreCodeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventAdder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EventAdder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GameEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelEditor.resx">
+      <DependentUpon>LevelEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeshViewerDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MeshViewerDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MusicList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Object2DEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Object2DEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="References.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>References.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpriteEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpriteEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeshEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MeshEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeshViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MeshViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ObjectEditor.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Code Snippets.txt" />
+    <Content Include="Icon.ico" />
+    <None Include="Resources\bdGameEngine.dll" />
+    <None Include="Resources\MainCode.txt" />
+    <None Include="Resources\app.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

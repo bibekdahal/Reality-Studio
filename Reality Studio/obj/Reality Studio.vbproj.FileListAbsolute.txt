@@ -1,0 +1,67 @@
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\ResolveAssemblyReference.cache
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.Resources.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality Studio.vbproj.GenerateResource.Cache
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MainForm.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MeshEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MeshViewer.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.ObjectEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.LevelEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MainEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.GameEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.CodeForm.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.EventAdder.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\bin\Debug\Reality Game Studio.exe.config
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\bin\Debug\Reality Game Studio.exe
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\bin\Debug\Reality Game Studio.pdb
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\bin\Debug\Reality Game Studio.xml
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality Game Studio.exe
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality Game Studio.xml
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality Game Studio.pdb
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.ClassForm.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MeshViewerDisplay.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MoreCodeForm.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.SpriteEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.ImgViewer.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.Object2DEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.SplashScreen1.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.AboutBox.resources
+C:\Documents and Settings\Bibek\Desktop\Reality Game Studio.exe.config
+C:\Documents and Settings\Bibek\Desktop\Reality Game Studio.exe
+C:\Documents and Settings\Bibek\Desktop\Reality Game Studio.pdb
+C:\Documents and Settings\Bibek\Desktop\Reality Game Studio.xml
+E:\bin\debug\Reality Game Studio.exe.config
+E:\bin\debug\Reality Game Studio.exe
+E:\bin\debug\Reality Game Studio.pdb
+E:\bin\debug\Reality Game Studio.xml
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MusicList.resources
+E:\Documents\Visual Studio 2005\Projects\Reality Studio\Reality Studio\obj\Debug\Reality_Studio.References.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\bin\debug\Reality Game Studio.exe.config
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality Game Studio.exe
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality Game Studio.xml
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality Game Studio.pdb
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\bin\debug\Reality Game Studio.exe
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\bin\debug\Reality Game Studio.pdb
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\bin\debug\Reality Game Studio.xml
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\ResolveAssemblyReference.cache
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.AboutBox.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.ClassForm.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.CodeForm.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.ImgViewer.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MoreCodeForm.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.EventAdder.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.GameEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.LevelEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MainEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MeshViewerDisplay.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MusicList.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.Object2DEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.References.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.SplashScreen1.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.SpriteEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MainForm.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MeshEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.MeshViewer.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.Resources.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality_Studio.ObjectEditor.resources
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\obj\Debug\Reality Studio.vbproj.GenerateResource.Cache
+E:\Documents\Visual Studio 2005\Projects\Copy of Reality Studio\Reality Studio\bin\debug\bdGameEngine.dll

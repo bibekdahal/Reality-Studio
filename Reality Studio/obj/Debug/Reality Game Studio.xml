@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RealityGameStudio
+</name>
+</assembly>
+<members>
+<member name="P:Reality_Studio.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Reality_Studio.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Reality_Studio.My.Resources.Resources.MainCode">
+	<summary>
+  Looks up a localized string similar to Imports Microsoft.VisualBasic
+Imports System
+Imports System.Drawing
+Imports System.Windows.Forms
+Imports System.Data
+Imports System.IO
+Imports System.Diagnostics
+Class MainClass
+    Public Shared Sub Main()
+		Dim k as new MainClass()
+    End Sub
+    
+    Public Sub New()
+		Dim FileName as string
+		Dim MedFileName as string
+		
+		Rem FILENAME
+		
+		Dim fs As New FileStream(Application.StartupPath + "\" + MedFileName, FileMode.Open, FileAccess.Read)
+        Dim w As New BinaryReader(fs)
+ [rest of string was truncated]";.
+</summary>
+</member><member name="T:Reality_Studio.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
